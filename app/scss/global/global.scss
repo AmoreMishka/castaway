@@ -1,0 +1,18 @@
+html, body{
+  height: 100%;
+}
+body{
+  color: $main;
+  font-size: 22px;
+  line-height: 33px;
+  @extend %DMSans-400;
+}
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.title{
+  font-size: 65px;
+  line-height: 79px;
+  letter-spacing: 2.88px;
+}
