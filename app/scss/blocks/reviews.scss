@@ -1,0 +1,31 @@
+.reviews{
+  padding-bottom: 95px;
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+  &__item{
+    max-width: 420px;
+    min-height: 360px;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 75px;
+  }
+  .star{
+    margin-bottom: 25px;
+  }
+  &__text{
+    font-size: 36px;
+    line-height: 43px;
+    max-width: 317px;
+    margin-bottom: 20px;
+  }
+  &__author{
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

@@ -1,0 +1,74 @@
+.subscribe {
+  padding-bottom: 190px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/icons/decor-form.svg);
+    background-repeat: no-repeat;
+    top: 330px;
+    bottom: 0;
+    left: 265px;
+    right: 0;
+  }
+  &__inner {
+    display: flex;
+    background-color: #000;
+    border-radius: 15px;
+    min-height: 387px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+
+
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 27px;
+    color: $title;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    max-width: 430px;
+    font-size: 72px;
+  }
+
+  &__form {
+    max-width: 522px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      width: 522px;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+      background-color: $bg;
+      border-radius: 10px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-left: 20px;
+
+      &::placeholder {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+
+    button {
+      @extend %DMSans-700;
+      font-size: 15px;
+      line-height: 29px;
+      background-color: $title;
+      color: $main;
+      width: 87px;
+      border-radius: 10px;
+      padding: 10px 9px;
+    }
+  }
+}

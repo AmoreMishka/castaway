@@ -1,0 +1,23 @@
+.header{
+  padding: 40px 0 60px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu{
+    display: flex;
+  }
+  &__menu-item{
+    font-size: 17px;
+    line-height: 27px;
+  }
+  &__menu-item + .header__menu-item{
+    margin-left: 40px;
+  }
+  &__menu-link{
+    color: $main;
+    &:hover{
+      color: $title;
+    }
+  }
+}

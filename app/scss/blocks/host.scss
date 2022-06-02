@@ -1,0 +1,33 @@
+.host{
+  padding-top: 90px;
+  padding-bottom: 200px;
+&__inner{
+display: flex;
+}
+&__info{
+  max-width: 590px;
+  margin-right: 55px;
+  padding-top: 90px;
+  svg{
+    width: 71px;
+    height: 38px;
+    display: block;
+    margin-bottom: 15px;
+    background-color: #118DA8;
+    padding: 10px;
+    border-radius: 15%;
+  }
+}
+&__subtitle{
+  font-size: 18px;
+  line-height: 27px;
+  color: $title;
+  margin-bottom: 15px;
+}
+&__title{
+  margin-bottom: 50px;
+}
+&__text{
+  margin-bottom: 45px;
+}
+}
