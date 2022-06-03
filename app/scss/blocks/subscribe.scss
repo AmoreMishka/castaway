@@ -1,6 +1,9 @@
 .subscribe {
   padding-bottom: 190px;
   position: relative;
+  @media(max-width:1300px){
+    padding-bottom: 90px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -8,8 +11,11 @@
     background-repeat: no-repeat;
     top: 330px;
     bottom: 0;
-    left: 265px;
+    left: calc(50% - 690px);
     right: 0;
+    @media(max-width:1300px){
+      display: none;
+    }
   }
   &__inner {
     display: flex;
@@ -19,7 +25,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 60px;
-
+    @media(max-width:1150px){
+      flex-direction: column;
+    }
 
   }
 
@@ -33,6 +41,14 @@
   &__title {
     max-width: 430px;
     font-size: 72px;
+    @media(max-width:1150px){
+      max-width: 100%;
+      margin-bottom: 15px;
+      font-size: 55px;
+    }
+    @media(max-width:600px){
+      font-size: 35px;
+    }
   }
 
   &__form {
@@ -40,9 +56,23 @@
     margin-right: 50px;
     display: flex;
     flex-direction: column;
-
+    @media(max-width:1150px){
+      margin-right: 0;
+    }
+    @media(max-width:600px){
+      max-width: 360px;
+    }
+    @media(max-width:400px){
+      max-width: 300px;
+    }
     label {
       width: 522px;
+      @media(max-width:600px){
+        width: 360px;
+      }
+      @media(max-width:400px){
+        width: 300px;
+      }
     }
 
     input {

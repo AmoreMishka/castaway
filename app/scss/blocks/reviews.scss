@@ -1,11 +1,20 @@
-.reviews{
+.reviews {
   padding-bottom: 95px;
-  &__inner{
+
+  &__inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
+
+    @media(max-width:1300px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width:900px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
-  &__item{
+
+  &__item {
     max-width: 420px;
     min-height: 360px;
     background-color: #000;
@@ -14,17 +23,31 @@
     flex-direction: column;
     padding-left: 50px;
     padding-top: 75px;
+
+    @media(max-width:1300px) {
+      margin: 0 auto;
+      width: 100%;
+      padding-left: 15px;
+      padding-top: 50px;
+    }
+    @media(max-width:400px){
+      max-width: 300px;
+      padding-top: 50px;
+    }
   }
-  .star{
+
+  .star {
     margin-bottom: 25px;
   }
-  &__text{
+
+  &__text {
     font-size: 36px;
     line-height: 43px;
     max-width: 317px;
     margin-bottom: 20px;
   }
-  &__author{
+
+  &__author {
     font-size: 24px;
     line-height: 29px;
   }
